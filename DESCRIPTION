@@ -1,0 +1,12 @@
+Package: rtefact
+Title: Analysis of archaeological artefact data
+Version: 0.01
+Authors@R: c(person("Andrew","Bevan", role=c("aut"),email="andrew.bevan@gmail.com")
+Description: Brings together a range of methods for analysing the time series, shapes and other properties of archaeological artefacts.  
+Depends: R (>= 3.3.0)
+Imports:stats,graphics,grDevices,utils,rgl
+Suggests: 
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1

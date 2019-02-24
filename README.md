@@ -1,2 +1,2 @@
 # rtefact
-Package for modelling artefact-scale data
+Package for modelling archaeological artefact data
