@@ -10,6 +10,12 @@
 #' @param col.exterior Colour of the exterior
 #' @param ... passed to par3d().
 #'
+#' @examples
+#' \dontrun{
+#' data(dolium)
+#' plot3dSR(dolium)
+#' }
+#' 
 #' @import rgl 
 #' @export
 #'

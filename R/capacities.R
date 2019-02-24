@@ -8,6 +8,7 @@
 #' 
 #' @return A single numeric value ofr the capacity in the ucubed units of the input.
 #' @examples
+#' data(dolium)
 #' plot(dolium, col="grey", border=NA, axes=TRUE)
 #' plot(doliumint, border="red", add=TRUE)
 #' volSR(doliumint) ##Input units are metres, cpaacity is 12.8L
@@ -44,9 +45,15 @@ volSR <- function(intprofile, left=TRUE){
 #' 
 #' @return An object of class SpatialPolygons showing the interior left or right hand cavity of a vessel.
 #'
+#' #' @examples
+#' data(dolium)
+#' realheight <- 0.72
+#' plot(dolium, col="grey", border=NA, axes=TRUE)
+#' doliumint1 <- findInterior(dolium, rimoffset=realheight/10)
+#' plot(doliumint1, border="red", add=TRUE)
+#' 
 #' @export
 findInterior <- function(x, rimoffset=0, left=TRUE){
-    ## Extract an interior polygon (for revolving) from a vessel profile polygon
     profile <- x@polygons[[1]]@Polygons[[1]]@coords
     profile <- as.data.frame(profile[1:(nrow(profile)-1),])
     names(profile) <- c("X","Y")
