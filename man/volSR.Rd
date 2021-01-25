@@ -21,5 +21,5 @@ Given a left or right-hand half of the interior of a simple (no reversions) vess
 data(dolium)
 plot(dolium, col="grey", border=NA, axes=TRUE)
 plot(doliumint, border="red", add=TRUE)
-volsr(doliumint) ##Input units are metres, capacity is 12.8L
+volsr(doliumint) ##Input units are metres, capacity is 0.128 m3 or 12.8L
 }
