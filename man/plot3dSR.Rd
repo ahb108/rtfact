@@ -4,10 +4,17 @@
 \alias{plot3dSR}
 \title{Find the interior profile of a vessel}
 \usage{
-plot3dSR(x, rimoffset = 0, left = TRUE, interior = TRUE,
-  col.interior = "red", col.exterior = "darkgoldenrod3",
-  windowRect = c(20, 30, 800, 800), userMatrix = rotationMatrix(180/pi
-  * 50, 1, 1, 0), ...)
+plot3dSR(
+  x,
+  rimoffset = 0,
+  left = TRUE,
+  interior = TRUE,
+  col.interior = "red",
+  col.exterior = "darkgoldenrod3",
+  windowRect = c(20, 30, 800, 800),
+  userMatrix = rotationMatrix(180/pi * 50, 1, 1, 0),
+  ...
+)
 }
 \arguments{
 \item{x}{An object of class SpatialPolygons* delineating the profile of a vessel.}

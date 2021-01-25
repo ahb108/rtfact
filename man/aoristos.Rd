@@ -4,8 +4,14 @@
 \alias{aoristos}
 \title{Produce a time series that counts up or otherwise summarises artefact data per year}
 \usage{
-aoristos(startdate, enddate, weight = NA, timeRange = NA,
-  calendar = "BCAD", verbose = TRUE)
+aoristos(
+  startdate,
+  enddate,
+  weight = NA,
+  timeRange = NA,
+  calendar = "BCAD",
+  verbose = TRUE
+)
 }
 \arguments{
 \item{startdate}{A vector of numeric values specifying the approximate start dates for the production of each artefact.}
