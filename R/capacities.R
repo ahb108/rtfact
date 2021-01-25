@@ -1,20 +1,20 @@
 #' @title Calculate the volume of a simple solid of revolution
 #'
-#' @description Given a left or right-hand half of the interior of a simple (no reversions) vessel shape, calculate the likely capacity if it were swept 360* about its middle axis, via the piecewise cylinders methods
+#' @description Given a left or right-hand half of the interior of a simple (no reversions) vessel shape, calculate the likely capacity if it were swept 360 degres about its middle axis, via the piecewise cylinders methods
 #' 
 #' 
-#' @param intprofile An object of class SpatialPolygons* delineating the outline of the left or right-hand side of the interior of a vessel.
+#' @param intprofile An object of class SpatialPolygons* delineating the outline of the left- or right-hand side of the interior of an object.
 #' @param left Is it the left or the right-hand side.
 #' 
-#' @return A single numeric value ofr the capacity in the ucubed units of the input.
+#' @return A single numeric value for the capacity in the cubed units of the input.
 #' @examples
 #' data(dolium)
 #' plot(dolium, col="grey", border=NA, axes=TRUE)
 #' plot(doliumint, border="red", add=TRUE)
-#' volSR(doliumint) ##Input units are metres, cpaacity is 12.8L
+#' volsr(doliumint) ##Input units are metres, capacity is 12.8L
 #' @export
 #' 
-volSR <- function(intprofile, left=TRUE){
+volsr <- function(intprofile, left=TRUE){
     coords <- intprofile@polygons[[1]]@Polygons[[1]]@coords
     x <- coords[,1]
     y <- coords[,2]
